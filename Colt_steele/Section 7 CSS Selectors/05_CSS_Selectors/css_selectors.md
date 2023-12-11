@@ -106,20 +106,22 @@ CSS specificity is a set of rules that determines which styles are applied to an
 
 Specificity is calculated based on the following factors:
 
-1. Inline Styles:
+## 1. Inline Styles:
  Styles applied directly to an element using the style attribute have the highest specificity.
 
 ```html
 <div style="color: red;">This text is red.</div>
 ```
-ID Selectors: Styles applied with an ID selector (#) have a higher specificity than class selectors or type selectors.
+## 2. ID Selectors: 
+Styles applied with an ID selector (#) have a higher specificity than class selectors or type selectors.
 
 ```css
 #unique-element {
   font-size: 18px;
 }
 ```
-Class Selectors, Attribute Selectors, and Pseudo-Classes: Styles applied with class selectors (.classname), attribute selectors ([attribute]), or pseudo-classes (:hover) have the same specificity.
+## 3. Class Selectors, Attribute Selectors, and Pseudo-Classes: 
+Styles applied with class selectors (.classname), attribute selectors ([attribute]), or pseudo-classes (:hover) have the same specificity.
 
 ```css
 .important-text {
@@ -134,7 +136,8 @@ a:hover {
   color: #ff4500;
 }
 ```
-Type Selectors and Pseudo-Elements: Styles applied with type selectors (element) and pseudo-elements (::before) have the lowest specificity.
+## 4. Type Selectors and Pseudo-Elements:
+ Styles applied with type selectors (element) and pseudo-elements (::before) have the lowest specificity.
 
 ```css
 p {
