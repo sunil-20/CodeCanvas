@@ -105,14 +105,33 @@ input[type="text"]: nth-of-type(2n){
 }
 ```
 # B. CSS text property
-properties:
+properties example:
+```css
+h1{
+    text-transform : uppercase;
+    font-size: 40px;
+    font-family: Monospace;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 20px;
+    text-decoration: wavy plum underline;
+    
+}
+```
 
 ## 1. font-family:
 
 Specifies the font for the text.
+- Generic family as backup: serif, sans-serif, monospace, cursive, fantasy, math, fangsong
+- If you specify only the family, it will randomly pick one.
 ```css
 body {
   font-family: Arial, sans-serif;
+  font-family: Georgia, serif;
+  font-family: cursive;
+  font-family: Gill Sans Extrabold, sans-serif; # any other sans-serif available.
+  font-family: calibri, Tahoma, Arial, cursive;
+  font-family: Monospace; # specify only family
 }
 ```
 ## 2. font-size:
