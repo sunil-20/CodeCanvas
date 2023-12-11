@@ -33,14 +33,11 @@ In summary, HTML provides the structure, CSS adds style, and JavaScript brings i
 </head>
 ```
 markdown
-Copy code
-# CSS Image property
+# A. CSS Image property
 
 ## 1. Background Image Property
 
 The `background-image` property is used to set the background image for an element.
-
-
 ```css 
 element {
   background-image: url('image.jpg');
@@ -105,5 +102,118 @@ You can apply hover effects to images using the :hover pseudo-class.
 ```css
 input[type="text"]: nth-of-type(2n){
     border: 2px solid red;
+}
+```
+# B. CSS text property
+properties:
+
+## 1. font-family:
+
+Specifies the font for the text.
+```css
+body {
+  font-family: Arial, sans-serif;
+}
+```
+## 2. font-size:
+
+Sets the size of the font.( xx-small, small, x-large, xx-large, xxx-large)
+```css
+p {
+  font-size: 16px;
+  font-size: x-small;
+  font-size: medium;
+  /* relative size */
+  font-size: smaller;
+  font-size: larger;
+  font-size: 2em;
+  font-size: 80%;
+  /* global values */
+  font-size: inherit;
+  font-size: initial;
+  font-size: unset;
+}
+```
+## 3. font-weight:
+
+Defines the thickness of the characters in the text.
+```css
+h1 {
+  font-weight: bold;
+  font-weight: 700;
+  font-weight: bolder; # bolder than its parent
+  font-weight: lighter; # lighter than its parent
+  width: 50% # set the width of h1 to 50% of the screen.
+
+}
+```
+## 4. font-style:
+
+Specifies the style of the font (normal, italic, or oblique).
+```css
+em {
+  font-style: italic;
+  font-weight: normal;
+}
+```
+## 5. color:
+
+Sets the color of the text.
+```css
+span {
+  color: #333333;
+}
+```
+## 6. line-height:
+Controls the height of a line of text.
+```css
+p {
+  line-height: 1.5;
+  line-height: normal;
+  line-height: 3em;
+  line-height: 150%;
+  line-height: 32px;
+}
+```
+## 7. text-align:
+
+Aligns the text within its container (left, right, center, or justify).
+```css
+div {
+  text-align: center;
+}
+```
+## 8. text-decoration:
+
+Adds decorations to text (underline, underline dotted, overline, line-through, dashed, double, solid).
+```css
+a {
+  text-decoration: none; # no underline in anchor tags as eg.
+  text-decoration: underline;
+  text-decoration: blue underline;
+  text-decoration: blue underline wavy;
+}
+```
+## 9. text-transform:
+
+Changes the capitalization of text.
+```css
+h2 {
+  text-transform: uppercase;
+}
+```
+## 10. letter-spacing:
+
+Adjusts the space between characters.
+```css
+p {
+  letter-spacing: 1px;
+}
+```
+## 11. word-spacing:
+Adjusts the space between words.
+```css
+p {
+  word-spacing: 2px;
 }
 ```
