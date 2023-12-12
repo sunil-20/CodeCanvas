@@ -91,10 +91,31 @@ div > li{
 ```
 ## 7. Attribute Selector
 The attribute selector selects elements with a specific attribute or attribute value.
-
+```html
+https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+ <input type="text" placeholder="search" id="search">
+ <input type="password" placeholder="password">
+```
 ```css
+/* this selects all inputs */
+input{
+    color: red;
+}
+/* this selects input with type=text only */
 input[type="text"] {
   border: 1px solid #ccc;
+}
+/* <a> element with an href containing "example" */
+a[href*="example"]{
+    font-size: 2em;
+}
+/*<a> element with an href ending ".org" */
+a[href$=".org"]{
+    font-style: italic;
+}
+/* <a> elements whose class attribute contains the word "logo" */
+a[class~="logo"]{
+    padding: 2px;
 }
 ```
 ## 8. Pseudo-classes and Pseudo-elements
