@@ -1,3 +1,47 @@
 h1,h2 {
     color: olivedrab;
 }
+button{
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+*{
+    background-color: mediumspringgreen;
+}
+
+#search{
+    background-color: skyblue;
+}
+body{
+    background-color: #f1faee;
+}
+#sign-up{
+    background-color: #1d3557;
+    color: white;
+}
+span{
+    color: #1d3557;
+}
+
+.tags{
+    color: white;
+    background-color: red;
+    font-size: 16px;
+
+}
+
+span a{
+    color: #1d3557;
+}
+/* any descendent after footer */
+footer a{
+    color: red;
+}
+h2 + button{
+    font-size: 20px;
+}
+/* direct child right after footer */
+footer > a{
+    color: blue;
+}

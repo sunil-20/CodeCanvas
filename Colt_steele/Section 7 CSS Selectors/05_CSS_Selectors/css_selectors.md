@@ -5,6 +5,7 @@ The universal selector * selects all elements on the page.
 * {
   margin: 0;
   padding: 0;
+  color: black;
 }
 ```
 ## 2. Type Selector
@@ -13,6 +14,10 @@ The type selector selects all instances of a given HTML element type.
 ```css
 p {
   color: #333;
+}
+
+h1, h2{  # this is selector lists: h1, h2, h3, p, div...
+    color: magenta;
 }
 ```
 ## 3. Class Selector
@@ -28,15 +33,26 @@ The class selector . selects elements with a specific class attribute.
 <button class="button">Click me</button>
 ```
 ## 4. ID Selector
-The ID selector # selects a single element with a specific ID attribute.
+The ID selector # selects a single element with a specific(unique in the page) ID attribute.
 
 ```css
 #header {
   font-size: 24px;
 }
+
+#search{
+    background-color: skyblue;
+}
 ```
 ```html
 <div id="header">Page Header</div>
+
+<nav>
+    <label for="search"></label>
+    <input type="text" placeholder="search" id="search">
+    <button>Log In</button>
+    <button>Sign Up</button>
+</nav>
 ```
 ## 5. Descendant Selector
 The descendant selector selects an element that is a descendant of another specified element.
@@ -45,13 +61,32 @@ The descendant selector selects an element that is a descendant of another speci
 article p {
   font-style: italic;
 }
+
+li a{
+    color: teal;
+}
+
+header a{
+    font-size: 30px;
+    color: teal;
+}
+
+#dislikes a{
+    color: red;
+ font-weight : bold;
+}
 ```
 ## 6. Child Selector
 The child selector > selects a direct child of a specified element.
 
 ```css
+/* direct children of ul. */
 ul > li {
   list-style-type: square;
+}
+/* direct children of div. */
+div > li{
+    color: white;
 }
 ```
 ## 7. Attribute Selector
@@ -81,7 +116,17 @@ Combinators are used to combine multiple selectors to create more complex and sp
 
 Descendant combinator: (space)
 Child combinator: >
+```css
+footer > a{
+    color: black;
+}
+```
 Adjacent sibling combinator: +
+```css
+input + button{
+    background-color: black;
+}
+```
 General sibling combinator: ~
 ```css
 nav ul {
@@ -98,6 +143,13 @@ h2 + p {
 
 h2 ~ p {
   margin-left: 20px;
+}
+```
+## 10. Adjacent Selectors (similar to combinators)
+Selects only the paragraphs that are immediately preceded by an <h1> in this case.
+```css
+h1 + p{
+    color: red;
 }
 ```
 ## CSS Specificity
