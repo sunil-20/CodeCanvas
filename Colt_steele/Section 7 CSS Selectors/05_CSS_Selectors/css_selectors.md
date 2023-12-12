@@ -91,8 +91,10 @@ div > li{
 ```
 ## 7. Attribute Selector
 The attribute selector selects elements with a specific attribute or attribute value.
+
+[mdn_attribute_selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
+
 ```html
-https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
  <input type="text" placeholder="search" id="search">
  <input type="password" placeholder="password">
 ```
