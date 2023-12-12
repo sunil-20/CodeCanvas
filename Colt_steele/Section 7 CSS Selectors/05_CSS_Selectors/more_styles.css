@@ -38,6 +38,9 @@ span a{
 footer a{
     color: red;
 }
+.post a{
+    text-decoration: none;
+}
 h2 + button{
     font-size: 20px;
 }
@@ -54,4 +57,52 @@ input[type="password"]{
 }
 section[class="post"]{
     background-color: navajowhite;
+}
+a[href="www.google.com"]{
+    font-size: 20px;
+}
+a[href*="github"]{
+    color:royalblue;
+}
+a[href$=".org"]{
+    color: green;
+}
+
+a:hover{
+    color:crimson;
+}
+/* button:hover{
+    color:green;
+    background-color: white;
+} */
+.post button:hover{
+    background-color: white;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: overline;
+}
+/* when clicked turn green */
+.post button:active{
+    background-color: #02c39a;
+}
+
+.post:nth-of-type(3n){
+    background-color: teal;
+}
+
+h2::first-letter{
+    color:red;
+    font-size:40px;
+}
+p::first-line{
+    color: red;
+}
+
+p::selection{
+    background-color:orange;
+}
+/* for all documents */
+::selection{
+    background-color:orange;
 }
