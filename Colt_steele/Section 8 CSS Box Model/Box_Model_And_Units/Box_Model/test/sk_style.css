@@ -7,3 +7,26 @@ h1{
     background-color: green;
     width: 100px;
      }
+#one{
+    background-color: #e5989b;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    /* box-sizing doesn't add the pixel. It is within the initial 200px */
+    box-sizing: border-box;
+}
+#two{
+    background-color: #b5838d;
+    border-width: 5px;
+    border-style: dotted;
+    border-left-color: green;
+}
+#three{
+    background-color: #6d6875;
+    /* border: medium dashed green; */
+    border: 4px solid green;
+    border-left-style: dotted;
+    border-radius: 10px;
+    /* border-radius: 50%; */
+    border-radius: 10px 50px/20px
+}
