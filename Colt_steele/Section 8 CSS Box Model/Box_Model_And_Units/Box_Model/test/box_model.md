@@ -52,5 +52,6 @@ element {
 element {
     padding: 10px 20px 15px 5px; /* top right bottom left */
 }
-
 ```
+- shorthand property
+<img src="shorthand_padding.png" alt="Alt Text" width="600" height="300">
