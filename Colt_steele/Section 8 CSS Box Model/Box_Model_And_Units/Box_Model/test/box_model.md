@@ -7,7 +7,8 @@ Controls the color.
 -border-style
 Controls the line style- dashed, solid, wavy etc.
 
-## shorthand property to assign border values
+**shorthand property to assign border values**
+
 border:medium dashed green; ( width|style|color)
 example
 
@@ -32,6 +33,24 @@ img{
     border-radius: 50%;
 }
 ```
-## Padding
+## 2. Padding
+
+[mdn_padding_link](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
+
+Padding is the space between the content, the actual content box, and the border of an element. Intuitive example: padding between the item and box while shipping something.
 <img src="padding.png" alt="Alt Text" width="400" height="300">
 
+- some major properties:
+```css
+element {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding: 10px; /* padding around*/
+
+}
+element {
+    padding: 10px 20px 15px 5px; /* top right bottom left */
+}
+
+```
