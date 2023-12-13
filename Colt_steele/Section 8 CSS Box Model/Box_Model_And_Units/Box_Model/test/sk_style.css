@@ -1,3 +1,6 @@
+body {
+    margin:0px;
+}
 div{
     width: 200px;
     height: 200px;
@@ -5,9 +8,10 @@ div{
 }
 h1{
     background-color: green;
-    width: 100px;
+    width: 200px;
     padding-left: 100px;
     padding-top: 50px;
+    margin-bottom: 0px;
      }
 #one{
     background-color: #e5989b;
@@ -16,6 +20,7 @@ h1{
     border-style: solid;
     /* box-sizing doesn't add the pixel. It is within the initial 200px */
     box-sizing: border-box;
+    margin-left: 50px;
 }
 #two{
     background-color: #b5838d;
@@ -32,4 +37,17 @@ h1{
     border-radius: 10px;
     /* border-radius: 50%; */
     border-radius: 10px 50px/20px
+}
+button{
+    padding: 20px;
+    /* vertical|horizontal */
+    padding: 5px 20px;
+    /* top|horizontal|bottom */
+    padding: 5px 20px 2px;
+    /* clockwise all sides starting from top */
+    padding: 5px 5px 5px 0px;
+}
+span{
+    margin-left: 30px;
+    margin-top: 20px;
 }

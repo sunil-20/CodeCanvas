@@ -1,0 +1,23 @@
+h1{
+    background-color:palegoldenrod;
+    border: 1px solid black;
+    width: 300px;
+    padding: 50px;
+    margin: 100px;
+    /* display: inline; */
+}
+span{
+    background-color: turquoise;
+    border: 1px solid black;
+    display: block;
+    /* display: inline-block; */
+}
+div{
+    height: 200px;
+    width: 200px;
+    background-color: olivedrab;
+    border: 2px solid black;
+    display: inline-block; /* should use inline-block instead of inline to function*/
+    margin: 50px;
+}
+/* display:none is used to hide the display */

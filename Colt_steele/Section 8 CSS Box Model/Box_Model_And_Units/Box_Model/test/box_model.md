@@ -57,3 +57,72 @@ element {
 ```
 - shorthand property
 <img src="shorthand_padding.png" alt="Alt Text" width="600" height="300">
+
+```css
+button{
+    padding: 20px;
+    /* vertical|horizontal */
+    padding: 5px 20px;
+    /* top|horizontal|bottom */
+    padding: 5px 20px 2px;
+    /* clockwise all sides starting from top */
+    padding: 5px 5px 5px 0px;
+}
+```
+## 3. Margin
+[mdn_margin_link](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)
+
+Margin is the space outside of an elements border. Between that elements and other elements.
+So padding is the spacing on the inside of the border. Margin is the spacing on the outside.
+
+```css
+div{
+    margin-left: 20px;
+margin-right: 10px;
+margin-bottom: 2px;
+margin-top: 1em;
+}
+```
+- shorthand property, same as padding.
+```css
+button{
+    margin: 20px;
+    /* vertical|horizontal */
+    margin: 5px 20px;
+    /* top|horizontal|bottom */
+    margin: 5px 20px 2px;
+    /* clockwise all sides starting from top */
+    margin: 5px 5px 5px 0px;
+}
+```
+## Display property
+
+The `display` property in CSS is used to define how an HTML element should be displayed on the page.
+[mdn_display_link](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+1. Inline
+Width and heights are ignored. Margina and padding push elements away horizontally but not vertically. <span> default inline.
+```css
+h1{
+    display:inline;
+}```
+
+2. Block
+Block elements break the flow of the document. Width, Height, Margin, and Padding are respected. h1..h6 default block.
+```css
+span{
+    display: block; /*span's default property is inline.*/
+}
+```
+3. Inline-Block
+Behave like an inline element except Width, Height, Margin, and Padding are respected.
+```css
+div{
+    height: 200px;
+    width: 200px;
+    background-color: olivedrab;
+    border: 2px solid black;
+    display: inline-block; /* should use inline-block instead of inline to function*/
+    margin: 50px;
+}
+- display:none is used to hide the display
+```

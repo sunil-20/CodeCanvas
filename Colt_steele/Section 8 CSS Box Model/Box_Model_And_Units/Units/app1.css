@@ -1,0 +1,64 @@
+section{
+    background-color: #6d6875;
+    width: 800px;
+    height: 800px;
+}
+
+div{
+    background-color: #e5989b;
+    width: 50%;
+    height: 50%;
+}
+
+h1{
+    font-size: 40px;
+    color: green;
+    border: 1px solid black;
+    line-height: 200%;
+
+}
+article{
+    font-size: 20px;
+}
+h2{
+    /* font-size: 200%; */
+    font-size: 60px;
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+p{
+    font-size: 1em;
+}
+button{
+    font-size: 50px;
+    padding: 0 30px;
+    border-radius: 15px;
+    background-color: #2a9d8f;
+    color: white;
+}
+button{
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #2a9d8f;
+    color: white;
+}
+
+#rems  h2{
+    font-size: 3rems;
+
+}
+#rems  h3{
+    font-size: 2rems;
+
+}
+
+#rems ul{
+    font-size: 1.5rem;
+}
+#rems button{
+    font-size: 1.5rem;
+}
