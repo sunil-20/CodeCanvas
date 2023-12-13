@@ -37,7 +37,9 @@ img{
 
 [mdn_padding_link](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
 
-Padding is the space between the content, the actual content box, and the border of an element. Intuitive example: padding between the item and box while shipping something.
+Padding is the space between the content, the actual content box, and the border of an element.
+Intuitive example: padding between the item and box while shipping something.
+
 <img src="padding.png" alt="Alt Text" width="400" height="300">
 
 - some major properties:
