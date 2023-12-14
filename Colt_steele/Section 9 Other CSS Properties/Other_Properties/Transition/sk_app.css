@@ -1,0 +1,47 @@
+.circle{
+    width: 300px;
+    height: 300px;
+    /* border-radius: 50%; */
+    background-color:magenta;
+    /* transition: 3s; */
+    /* transition only background color while border radius changes immediately*/
+    /* transition: background-color 3s; */
+    /* adding delay: transition start after specified delay, ie in this
+    example, the color changes after 1sec */
+    /* transition: background-color 3s 1s; */
+    /* specify all */
+    /* transition: all 3s 1s; */
+    /* multiple selections */
+    transition: background-color 1s, border-radius 3s;
+}
+
+.circle:hover{
+    background-color: cyan;
+    border-radius: 50%;
+}
+
+section div{
+    height: 100px;
+    width: 100px;
+    background-color: turquoise;
+    margin: 20px 0;
+    transition: margin-left 3s;
+}
+
+section:hover div{
+    margin-left:500px;
+    border-radius: 50%;
+    background-color: green;
+}
+div:nth-of-type(1){
+    transition-timing-function: ease-in;
+}
+div:nth-of-type(2){
+    transition-timing-function: ease-out;
+}
+div:nth-of-type(3){
+    transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+div:nth-of-type(4){
+    transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+}
