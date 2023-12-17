@@ -1,0 +1,13 @@
+h1 {
+  color: red;
+}
+img{
+  height: 200px;
+}
+
+.huge{
+  font-size: 5rem;
+  color: red;
+  font-weight: bold;
+
+}
