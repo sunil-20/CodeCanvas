@@ -3,9 +3,10 @@
 import generateName from "sillyname";
 import superheroes from "superheroes";
 
-
+//generating silly name
 var sillyName = generateName();
-// var superheroes = superheroes.all();
-const name = superheroes.random();
 console.log(`My name is ${sillyName}.`);
+
+//generating superheroes
+const name = superheroes.random();
 console.log(`I am  ${name}!`)
