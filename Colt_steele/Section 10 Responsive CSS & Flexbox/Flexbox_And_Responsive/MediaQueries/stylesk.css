@@ -1,5 +1,78 @@
-@media (max-width: 800px){
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-size: 6em;
+    text-align: center;
+}
+
+nav{
+        font-size: 1.5em;
+        display: flex;
+        /* justify-content: center; */
+        justify-content: space-between;
+    }
+
+ul, li{
+        display: inline;
+        margin: 0;
+        padding:0;
+    }
+
+ul{
+        flex: 1;
+        max-width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+
+/* @media (min-width: 600px) and (max-width: 800px){
     h1{
         color: red;
     }
+} */
+@media{
+    h1{
+        color: red;
     }
+}
+
+@media(min-width: 500px){
+    h1{
+    font-size: 3em;
+    color: orange;
+    }
+}
+@media(min-width: 1000px){
+    h1{
+    font-size: 4em;
+    color: rgb(230, 23, 216);
+    }
+}
+@media(min-width: 1500px){
+    h1{
+    font-size: 5em;
+    color:green;
+    }
+}
+
+@media(max-width: 768px){
+    h1{
+        font-size: 4em;
+    }
+    nav, nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* nav ul{
+        flex-direction: column;
+        align-items: center;
+    } */
+}
+@media(max-width: 576px){
+    h1{
+        font-size: 3em;
+    }
+}
