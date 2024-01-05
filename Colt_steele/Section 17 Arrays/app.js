@@ -11,7 +11,7 @@ console.log(myArray[4]);
 myArray[4] = "red";
 console.log(myArray[4]);
 
-//push, pop, shift, unshift
+//push, pop, shift, unshift add /remove from begining or end
 
 let movieLine = ['Jack', 'Jill', 'Roma'];
 movieLine.push("Tom");
