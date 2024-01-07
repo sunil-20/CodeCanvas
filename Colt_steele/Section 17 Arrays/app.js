@@ -29,3 +29,7 @@ console.log(cats.concat(dogs));
 
 //includes
 console.log(cats.includes("blue"));
+//indexOf
+console.log(cats.indexOf('rusty'));
+console.log(dogs.indexOf('rusty'));
+console.log(dogs.indexOf('tommy'));
