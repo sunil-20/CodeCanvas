@@ -24,5 +24,8 @@ console.log(movieLine);
 
 //concat
 let cats = ["blue", "kitty"]
-let dogs = ["rusty", "Tommy"]
+let dogs = ["rusty", "tommy"]
 console.log(cats.concat(dogs));
+
+//includes
+console.log(cats.includes("blue"));
