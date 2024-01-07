@@ -21,3 +21,8 @@ console.log(movieLine);
 
 movieLine.unshift("Jack is out from here!");
 console.log(movieLine);
+
+//concat
+let cats = ["blue", "kitty"]
+let dogs = ["rusty", "Tommy"]
+console.log(cats.concat(dogs));
