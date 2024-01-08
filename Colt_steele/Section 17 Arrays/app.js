@@ -29,7 +29,30 @@ console.log(cats.concat(dogs));
 
 //includes
 console.log(cats.includes("blue"));
-//indexOf
+//indexOf => nothing(-1), first(0) and second(1)
 console.log(cats.indexOf('rusty'));
 console.log(dogs.indexOf('rusty'));
 console.log(dogs.indexOf('tommy'));
+
+//reverse
+console.log(cats.concat(dogs).reverse())
+
+//slice
+let colors = ['white','orange','yellow','green','blue','indigo','violet','purple'];
+console.log(colors.slice(3));
+//includes starts not include stop
+console.log(colors.slice(2,4));
+//using -ve index
+console.log(colors.slice(-2));
+
+//splice() removing or replacing array
+let update_color = colors.splice(5,1);
+console.log(update_color);
+colors.splice(1,0,"red-orange");
+console.log(colors);
+colors.splice(3,0,"blue-sky","sky-blue");
+console.log(colors);
+
+//sort array.sort()
+console.log(colors.sort());
+
