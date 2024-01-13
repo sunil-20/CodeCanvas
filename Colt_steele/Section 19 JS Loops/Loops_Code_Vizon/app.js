@@ -69,3 +69,24 @@ for (let i = 0; i < matrix.length; i++) {
         console.log(matrix[i][j]);
     }
 }
+//while loop
+let num = 1;
+while(num<=10){
+    console.log(num);
+    num++;
+}
+
+// while loop with break
+let input = prompt("Hey, say something!");
+while(true){
+    input = prompt(input);
+    if(input.toLowerCase()=== "stop copying me") break;
+
+}
+console.log("Ok you win!")
+
+//breaking in for loop after 100
+for(let i = 0; i <1000; i++){
+    console.log(i);
+    if(i===100) break;
+}
