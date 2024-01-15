@@ -59,3 +59,29 @@ function isShortsWeather(temperature) {
         return null;
     }
 x([1,2,3])
+
+//capitalize the first letter in the string
+function capitalize(x){
+    let final_word = x.charAt(0).toUpperCase() + x.slice(1);
+    return final_word;
+}
+x("vizon") // result Vizon
+
+//summing an array
+function sumArray(nums){
+    let total = 0;
+    for(let num of nums){
+        total += num;
+    }
+    return total;
+}
+
+//days of the week
+const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+function returnDay(x){
+    if (x>=1 && x<= 7){
+        return days[x-1]
+    }
+    return null;
+}
+console.log(returnDay(7))

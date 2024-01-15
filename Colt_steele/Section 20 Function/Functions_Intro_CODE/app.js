@@ -26,16 +26,3 @@ function add(x, y) {
 
 
 
-
-// singSong()
-// singSong()
-// singSong()
-// singSong()
-// singSong()
-// singSong()
-// singSong()
-// singSong()
-// singSong()
-// singSong()
-// singSong()
-
