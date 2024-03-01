@@ -1,92 +1,92 @@
-// let totalEggs= 0;
-// function collectEggs(){
-//     totalEggs = 7;
-// }
-// collectEggs();
-// console.log(totalEggs);
+let totalEggs= 0;
+function collectEggs(){
+    totalEggs = 7;
+}
+collectEggs();
+console.log(totalEggs);
 
-// let bird = "Scarlet Macaw";
-// function birdWatch(){
-//     // let bird = "Great Blue Heron";
-//     console.log(bird);
-// }
-// birdWatch()
+let bird = "Scarlet Macaw";
+function birdWatch(){
+    // let bird = "Great Blue Heron";
+    console.log(bird);
+}
+birdWatch()
 
-// let radius = 8;
-// if (radius > 0){
-//     const PI = 3.14159;
-//     var msg = "HIII!";
-// }
-// console.log(radius);
-// console.log(PI);
-// console.log(msg);
+let radius = 8;
+if (radius > 0){
+    const PI = 3.14159;
+    var msg = "HIII!";
+}
+console.log(radius);
+console.log(PI);
+console.log(msg);
 
-// for (var i=0; i< 5; i++){
-//     var msg = "ASSSSSSSSDDDDKKK";
-//     console.log(msg)
-// }
-// console.log(msg)
-// console.log(i)
-
-
-// function bankRobbery(){
-//     const heroes = ['Spiderman','Wolverine', 'Black Panther', 'Batwoman']
-//     function cryForHelp(){
-//         for (let hero of heroes){
-//          console.log(`Please help us, ${hero.toUpperCase()}`)   
-//         }
-//     }
-//     cryForHelp();
-// }
+for (var i=0; i< 5; i++){
+    var msg = "ASSSSSSSSDDDDKKK";
+    console.log(msg)
+}
+console.log(msg)
+console.log(i)
 
 
-// bankRobbery()
+function bankRobbery(){
+    const heroes = ['Spiderman','Wolverine', 'Black Panther', 'Batwoman']
+    function cryForHelp(){
+        for (let hero of heroes){
+         console.log(`Please help us, ${hero.toUpperCase()}`)   
+        }
+    }
+    cryForHelp();
+}
 
-// function add(x,y){
-//     return x+y;
-// }
-// console.log(add(4, 5))
+
+bankRobbery()
+
+function add(x,y){
+    return x+y;
+}
+console.log(add(4, 5))
 
 
-// const square = function(x){
-//     return x*x;
-// }
-// square()
+const square = function(x){
+    return x*x;
+}
+square()
 
-// let greet = function(){
-//     console.log("HI!")
-// }
-// greet()
+let greet = function(){
+    console.log("HI!")
+}
+greet()
 
-// function callTwice(func){
+function callTwice(func){
 
-//     func();
-//     func();
-// }
+    func();
+    func();
+}
 
-// function callTenTimes(f){
-//     for (let i = 0; i <10; i++){
-//         f()
-//     }
-// }
-// function rollDie(){
-//     const roll=Math.floor(Math.random()*6)+1
-//     console.log(roll)
-// }
-// callTwice(rollDie)
-// callTenTimes(rollDie)
+function callTenTimes(f){
+    for (let i = 0; i <10; i++){
+        f()
+    }
+}
+function rollDie(){
+    const roll=Math.floor(Math.random()*6)+1
+    console.log(roll)
+}
+callTwice(rollDie)
+callTenTimes(rollDie)
 
 // factory functions
-// function makeBetweenFunc(min, max){
-//     return function(num){
-//         return num>= min && num<= max;
-//     }
-// }
+function makeBetweenFunc(min, max){
+    return function(num){
+        return num>= min && num<= max;
+    }
+}
 
-// const isChild = makeBetweenFunc(0, 18);
-// const isAdult= makeBetweenFunc(19,64);
-// const senior= makeBetweenFunc(65, 120);
-// console.log(senior(66))
+const isChild = makeBetweenFunc(0, 18);
+const isAdult= makeBetweenFunc(19,64);
+const senior= makeBetweenFunc(65, 120);
+console.log(senior(66))
 
 // Defining methods
 const myMath={
