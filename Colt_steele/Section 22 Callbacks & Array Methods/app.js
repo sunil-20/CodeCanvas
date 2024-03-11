@@ -98,3 +98,57 @@ const firstNames = fullNames.map(function(fullName){
 })
 
 console.log(firstNames);
+
+// Arrow functions 
+const add = function(x,y){
+    return x + y;
+}
+
+const square = (x) =>{
+    return x*x;
+}
+
+const sum = (x, y) =>{
+    return x+y;
+}
+
+//with no arguments 
+
+const rollDie = () =>{
+    return Math.floor(Math.random()*6)+1
+}
+console.log(rollDie());
+
+//another method without using parenthesis, just keyword
+const square = num =>{
+    return num**2;
+}
+console.log(square(3))
+
+
+const greet = (x) =>{
+    return `Hey ${x}!`
+}
+
+// greet("Hagrid") //"Hey Hagrid!" 
+// greet("Luna") //"Hey Luna!"
+
+//implicit return
+
+// no return keyword used, implicitly it will return. No curly braces and single expression
+const isEven = num =>(
+    num % 2 === 0 
+)
+// one liner implicit return, one value very clear.
+const isEven = num => num % 2 === 0; // no braces used.
+
+const add = (a, b) => a+b;
+
+//further map method
+const newMovie = movies.map(movie =>(
+    `${movie.title} - ${movie.score/10}`
+))
+
+console.log(newMovie)
+
+//setTimeout and setInterval
