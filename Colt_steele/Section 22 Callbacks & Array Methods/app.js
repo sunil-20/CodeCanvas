@@ -152,3 +152,64 @@ const newMovie = movies.map(movie =>(
 console.log(newMovie)
 
 //setTimeout and setInterval
+setTimeout(()=>{
+    console.log("Hello!!!")
+}, 3000)
+//-----------------------
+console.log("Hello!!!.....");
+setTimeout(() => {
+    console.log("........are you still there?")
+}, 3000)
+
+console.log("Goodbye!!!")
+
+//set interval 
+// syntax: setInterval(function, delay);
+
+// Start the interval and save the interval ID
+const intervalId = setInterval(() => {
+    console.log('Hello, world!');
+}, 1000);
+
+// Stop the interval after 5 seconds
+setTimeout(() => {
+    clearInterval(intervalId);
+    console.log('Interval stopped.');
+}, 5000);
+
+const id = setInterval(()=>{
+    console.log(Math.random())
+}, 2000);
+
+clearInterval(id)
+
+//filter method
+// creates a new array with all elements that pass the test implemented by the provided function.
+const nums = [9, 8, 7, 6, 5, 4, 3, 2, 1]
+const odds = nums.filter(n=>{
+    return n % 2 === 1;
+})
+
+const five_less=nums.filter(n=>{
+    return n<5
+})
+console.log(five_less);
+console.log(odds)
+
+const goodMovies = movies.filter(movie=>{
+    return movie.score > 80
+})
+//double mapping, first good movies, then the title of those movies.
+const goodTitle = movies.filter(m=> m.score> 80).map(m => m.title);
+console.log(goodTitle)
+
+
+function validUserNames(usernames) {
+    const names = usernames.filter(m=> {
+        return m.length < 10;
+   });
+   return names;
+   }
+
+   console.log(validUserNames(['mark', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan']));
+   
