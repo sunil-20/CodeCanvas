@@ -213,3 +213,72 @@ function validUserNames(usernames) {
 
    console.log(validUserNames(['mark', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan']));
    
+   //some and every
+   //every: if one is false, all is false.
+   //some: if one is true, all is true.
+   const exams = [80, 98, 92, 78, 70, 90, 89, 84, 81, 77]
+   console.log(exams.every(score=> score >= 75)) // return false because one(70) is less than 75.
+
+   console.log(exams.some(score=> score >=75)) // return true because only one has to be true(here >= 75)
+
+  
+  
+   function allEvens(numbers){
+    return numbers.every(number=> number%2===0)
+    
+    }
+    console.log([2, 10])
+
+    //reduce method
+    const total = exams.reduce((acc, crr)=>{
+        return acc+crr;
+    })
+    console.log(total)
+
+    //single line
+    const total1 = exams.reduce((total, price)=> total+price)
+    console.log(total1)
+
+    // min and max 
+    //min
+    const minScore = exams.reduce((min, score)=>{
+        if(score <min){
+            return score
+        }
+        return min
+    });
+    console.log(minScore)
+
+//max
+const maxScore = exams.reduce((max, score)=> {
+    if(score > max){
+        return score;
+    }
+    return max;
+});
+
+console.log(maxScore)
+
+//finding best movie
+
+const bestRated = movies.reduce((bestMovie, currMovie)=>{
+    if(currMovie.score > bestMovie){
+        return currMovie;
+    }
+    return bestMovie;
+})
+console.log(bestRated);
+
+//adding second argument
+
+evens.reduce((sum, num)=> sum+num, 100) // 100 is added on top of the sum.
+
+//keyword this
+const person = {
+    firstName: 'Tony',
+    lastName: 'Robbins',
+    fullName: function(){
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+console.log(fullName())
