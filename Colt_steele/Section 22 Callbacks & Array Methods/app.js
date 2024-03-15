@@ -282,3 +282,15 @@ const person = {
     }
 }
 console.log(fullName())
+
+// using arrow function doesn't access the firstName and lastName( result: undefined, undefined)
+// So, use regular function.
+const person = {
+    firstName: 'Tony',
+    lastName: 'Robbins',
+    fullName: () => {
+        return `${this.firstName} ${this.lastName}`;
+    }
+};
+
+console.log(person.fullName());
