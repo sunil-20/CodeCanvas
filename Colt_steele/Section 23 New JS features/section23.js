@@ -33,7 +33,7 @@ function greet(name, msg="Hello"){
 }
 console.log(greet("Joanna")) // result: Hello Joanna !
 
-// Spread method
+// Spread method , used in copying objects
 const nums = [12, 34, 56, 22, 36, 55, 22, 66, 21, 20]
 
 console.log(Math.max(nums)) // result: NaN
@@ -51,3 +51,9 @@ allPets.push("Bravo") // add one more in allPets
 const allPets = [...cats, ...dogs, "Speedy"] // manually add your own additional pet name.
 
 // spread with objects
+const myArray = [2,4,5,6,7]
+const myString = "Hello!"
+console.log({...myArray}) //result: { '0': 2, '1': 4, '2': 5, '3': 6, '4': 7 }
+console.log({...myString}) //result: { '0': 'H', '1': 'e', '2': 'l', '3': 'l', '4': 'o', '5': '!' }
+console.log(...myString) //result: H e l l o !
+
